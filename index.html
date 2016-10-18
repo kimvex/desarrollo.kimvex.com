@@ -5,33 +5,38 @@
   <title>Kimvex</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/estilo.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/arriba.js"></script>
 </head>
 <body>
+  <span class="ir-arriba"></span>
+  <nav class="menu">
+    <ul class="opciones-menu">
+      <li class="item">
+        <a href="/" class="inicio">
+          Inicio
+        </a>
+      </li>
+      <li class="item">
+        <a href="#quienes-somos" class="quienes">
+          ¿Quienes somos?
+        </a>
+      </li>
+      <li class="item">
+        <a href="#clientes" class="cliente">
+          Clientes
+        </a>
+      </li>
+      <li class="item">
+        <a href="#contacto" class="contacto">
+          Contactanos
+        </a>
+      </li>
+    </ul>
+  </nav>
   <header class="cabecera">
-    <nav class="menu">
-      <ul class="opciones-menu">
-        <li class="item">
-          <a href="/" class="inicio">
-            Inicio
-          </a>
-        </li>
-        <li class="item">
-          <a href="quienes-somos.html" class="quienes">
-            ¿Quienes somos?
-          </a>
-        </li>
-        <li class="item">
-          <a href="clientes.html" class="cliente">
-            Clientes
-          </a>
-        </li>
-        <li class="item">
-          <a href="contactanos.html" class="contacto">
-            Contactanos
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <video src="assets/video/fondo.mp4" autoplay loop muted poster="assets/img/precarga.png">
+    </video>
     <div class="titulo">
       <h1 class="titulo-kimvex">
         KIMVEX
@@ -41,38 +46,59 @@
       </h2>
     </div>
   </header>
-  <section class="cuerpo">
-    <div class="contenedor">
-      <article class="informacion">
-        <h2>¿QUIENES SOMOS?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </article>
-    </div>
-  </section>
-  <section class="cuerpo2">
-    <article class="clientes">
-      <h2>Clientes</h2>      
+  <section class="cuerpo" id="quienes-somos">
+    <article class="inconos-somos">
+      <span class="icon-user-tie"></span>
+      <span class="icon-display"></span>
+      <span class="icon-tablet"></span>
+    </article>
+    <article class="informacion">
+      <h2>¿QUIENES SOMOS?</h2>
+      <div class="inf-img">        
+        <p>Somos una empresa de desarrollo de Software y aplicaciones web, dedicados a cumplir los requerimientos de nuestros clientes, utilizando las tecnologías más actuales.</p>
+        <img src="assets/img/kimvex.png">
+      </div>
     </article>
   </section>
-  <footer class="pie">
-      <p>Copyright 2016 Kimvex</p>
+  <section class="cuerpo2" id="clientes">
+    <article class="clientes">
+      <h2>Clientes</h2>
+      <div class="cont-clientes">
+      	<div class="item-clientes">
+      		<img src="assets/img/itzo.png">
+      		<a href="http://www.itzonaolmeca.edu.mx" target="_blank">http://www.itzonaolmeca.edu.mx</a>
+      	</div>      	
+      	<div class="item-clientes">
+      		<img src="assets/img/movimiento.png">
+      		<a href="http://movimientociudadanotabasco.com.mx" target="_blank">http://movimientociudadanotabasco.com.mx</a>
+      	</div>
+      </div>      
+    </article>
+  </section>
+  <footer class="pie" id="contacto">
+      <p>© Copyright 2016 Kimvex</p>
+      <div class="contacto">      	
+      	<span>CONTACTO</span>
+      	<strong>E-mail</strong>
+	    <a href="mailto:alexxruff@yahoo.com">
+	      	<span>alexxruff@yahoo.com</span>
+	    </a>	    
+	    <a href="mailto:chomi.numb.94@gmail.com">
+	      	<span>chomi.numb.94@gmail.com</span>
+	    </a>
+      </div>
       <div>
         <li>
-          <a href="https://www.facebook.com/kimvex" class="icon-facebook">Facebook</a>
+          <a href="https://www.facebook.com/kimvex" class="icon-facebook" target="_blank"> Facebook</a>
         </li>
         <li>
-          <a href="https://twitter.com/Kimvex_oficial" class="icon-twitter">Twitter</a>          
+          <a href="https://twitter.com/Kimvex_oficial" class="icon-twitter" target="_blank"> Twitter</a>          
         </li>
         <li>
-          <a href="https://www.youtube.com/user/kimvexsocial" class="icon-youtube">YouTube</a>          
+          <a href="https://www.youtube.com/user/kimvexsocial" class="icon-youtube" target="_blank"> YouTube</a>          
         </li>
         <li>
-          <a href="" class="icon-linkedin">Linkedin</a>          
+          <a href="" class="icon-linkedin" target="_blank"> Linkedin</a>          
         </li>
       </div>
   </footer>
