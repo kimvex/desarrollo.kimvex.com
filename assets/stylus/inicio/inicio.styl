@@ -78,8 +78,12 @@
   
 .menu
   width 100%
+  //height 100px
+  padding 0
   position fixed
   top 0
+  background-color #fff //#f3f3f3
+  box-shadow rgba(0, 0, 0, .5) 0px 5px 10px
   .opciones-menu
     width 100%
     margin 0
@@ -88,12 +92,26 @@
     display -webkit-flex
     display -moz-flex
     flex-direction row
-    justify-content flex-end
+    justify-content center
     list-style none
+    .menu-logo
+      width 30%
+      display flex
+      justify-content flex-start
+      align-items center
+      text-align center
+      img
+        width 210px
+        height 70px
+        transition .4s
+        &:hover
+          width 170px
+          height 55px
+          transition .4s
     .item
       a
         display block
-        padding 1.5em
+        padding 1.5em 1em
         text-decoration none
         font-size 1.1em
         text-transform uppercase
@@ -106,16 +124,19 @@
         -moz-transition .4s
         border-bottom .1em solid transparent
         &:hover
-          border-bottom .1em solid white
+          //border-bottom .1em solid white
+          background-color rgba(11, 187, 121, 1)
+          color white
+          border-radius 5px
           transition .4s
           -webkit-transition .4s
           -moz-transition .4s
 .cabecera
   width 100%
-  height 100%
+  height 110%
   background-color rgba(0, 0, 0, .5)
   //border-bottom 1em solid rgba(0, 0, 0, .3)
-  padding-top 7rem
+  padding-top 200px
   video
     position fixed
     min-width 100%
@@ -133,13 +154,93 @@
       font-size 10em
       margin-bottom .2em
       margin-top 0
+      text-align center
     .subtitulo
+      font-size 1.4em
+      font-weight 400
       margin 0
+      text-align center
       text-shadow 0em 0em 0em #000
+
+.servicios
+  width 100%
+  height 160%
+  background url('../img/servicio.jpg') no-repeat
+  background-size cover
+  background-attachment fixed
+  padding 0
+  margin 0
+  .servicios-dif
+    width 100%
+    height 100%
+    background-color rgba(0, 0, 0, .75)
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    h3
+      width 100%
+      padding 100px 0 1rem 0
+      margin 0
+      font-size 2rem
+      font-family 'Montserrat'
+      font-weight 400
+      color #fff
+      text-align center
+      white-space pre-wrap
+    .cont-servicios
+      width 80%
+      height 80%
+      display flex
+      justify-content space-around
+      align-items space-around
+      flex-wrap wrap
+      .item-servicio
+        list-style none
+        width 30%
+        height 45%
+        //border 2px solid white
+        display flex
+        flex-direction column
+        justify-content space-around 
+        align-items center
+        img
+          width 270px
+          height 270px
+          border-radius 50%
+          animation-name regresa
+          animation-duration .5s
+          &:hover
+            animation-name girar
+            animation-duration .5s
+            //animation-timing-function linear
+
+        span
+          color #fff
+          font-family 'Montserrat'
+          font-size 1.1rem
+         
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes regresa {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 
 .cuerpo
   width 100%
-  height 140%
+  height 160%
   // background rgba(0,0,0,0.3) url('../img/photo-1416339442236-8ceb164046f8.jpg') no-repeat
   // background-attachment fixed
   // background-size cover
@@ -149,6 +250,7 @@
   flex-direction column
   justify-content center
   align-items center
+  padding-top 50px
   // .contenedor
   //   width 100%
   //   height 100%
@@ -160,7 +262,7 @@
   //   align-items center
   .inconos-somos
     width 80%
-    height 30%
+    height 25%
     display flex
     justify-content space-around
     align-items center
@@ -172,11 +274,11 @@
       border 5px solid rgba(11, 187, 121, 1)
       padding 1rem 0
       border-radius 5px
-      box-shadow rgba(0, 0, 0, .3) 0px 8px 10px
+      //box-shadow rgba(0, 0, 0, .3) 0px 8px 10px
       text-shadow rgba(0, 0, 0, .3) 0px 8px 10px
   .informacion
     width 80%
-    height 40%
+    height 35%
     text-align left
     color rgba(11, 187, 121, 1)
     font-size 1.5em
@@ -197,18 +299,19 @@
         line-height 1.4
         color #a79e9e
       img
-        width 300px
-        height 180px
+        width 340px
+        height 120px
   .miembros
-    width 100%
-    height 29%
+    width 90%
+    height 39%
     display flex
     justify-content space-around
     align-items center
     margin-bottom 3rem
+    flex-wrap wrap
     span
-      width 14%
-      height 100%
+      width 25%
+      height 50%
       display flex
       flex-direction column
       justify-content space-around
@@ -224,8 +327,8 @@
         
 .cuerpo2
   width 100%
-  height 100%       
-  background rgba(0,0,0,0.1) url('../img/fondo.jpg') no-repeat     
+  height 110%       
+  background rgba(0,0,0,0.1) url('../img/clientes.jpg') no-repeat     
   background-attachment fixed
   background-size cover
   display flex
@@ -234,26 +337,30 @@
   .clientes
     width 100%
     height 100%
-    padding-top 1em
     display flex
     flex-direction column
+    //background rgba(11, 187, 121, .1)
     justify-content center
+    align-items center
     //box-shadow rgba(0, 0, 0, .7) 0px 4px 6px
     
     h2
       width 100%
-      height 15%
+      height 10%
       margin 0
       padding 0
       text-align center
       color white
-      font-weight 700
+      font-weight 400
       font-size 1.5em
+      font-size 'Montserrat'
       text-transform uppercase
+      padding 0
+      margin 0
     
     .cont-clientes
       width 100%
-      height 84%
+      height 60%
       display flex
       justify-content space-around
       align-items center
