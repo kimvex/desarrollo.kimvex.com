@@ -58,6 +58,7 @@
 .icon-linkedin
   &:before
     content "\eaca"
+
 .ir-arriba
   display none
   position fixed
@@ -75,13 +76,18 @@
   height 30px
   background url("../img/flecha-verde.png")
   background-size cover
-  
+
+.active
+  background-color rgba(11, 187, 121, 1)
+  color white
+
 .menu
   width 100%
   //height 100px
   padding 0
   position fixed
   top 0
+  z-index 1001
   background-color #fff //#f3f3f3
   box-shadow rgba(0, 0, 0, .5) 0px 5px 10px
   .opciones-menu
@@ -93,6 +99,7 @@
     display -moz-flex
     flex-direction row
     justify-content center
+    align-items center
     list-style none
     .menu-logo
       width 30%
@@ -122,7 +129,7 @@
         transition .4s
         -webkit-transition .4s
         -moz-transition .4s
-        border-bottom .1em solid transparent
+        //border-bottom .1em solid transparent
         &:hover
           //border-bottom .1em solid white
           background-color rgba(11, 187, 121, 1)
@@ -161,6 +168,9 @@
       margin 0
       text-align center
       text-shadow 0em 0em 0em #000
+    img
+      width 600px
+      height 50px
 
 .servicios
   width 100%
@@ -302,7 +312,7 @@
         width 340px
         height 120px
   .miembros
-    width 90%
+    width 93%
     height 39%
     display flex
     justify-content space-around
@@ -310,7 +320,7 @@
     margin-bottom 3rem
     flex-wrap wrap
     span
-      width 25%
+      width 23%
       height 50%
       display flex
       flex-direction column
@@ -438,6 +448,21 @@
         &:hover
           color rgba(11, 187, 121, 1)
 
+@media (max-width: 1015px)
+  .menu
+    .opciones-menu
+      .menu-logo
+        text-align center
+      .item
+        a
+          font-size 1em
+          padding 1.5rem .5rem
+  .servicios
+    .servicios-dif
+      .cont-servicios
+        width 95%            
+      
+
 @media (max-width: 950px)
   .cuerpo2
     .clientes
@@ -449,6 +474,53 @@
             height 170px
           a
             font-size 1.1rem
+
+@media (max-width: 890px)
+  .menu
+    .opciones-menu
+      .menu-logo
+        text-align center
+      .item
+        a
+          padding 1.6rem .3rem
+        .inicio
+          padding 1.6rem .5rem
+  .servicios
+    .servicios-dif
+      .cont-servicios  
+        .item-servicio
+          img
+            width 220px
+            height 220px
+
+  .cuerpo
+    .informacion
+      width 90%
+      .inf-img
+        p
+          font-size 1.3rem
+        img
+          width 290px
+          height 100px
+    .miembros
+        width 100%
+        span
+          img
+            width 100px
+            height 100px
+          strong
+            font-size .9rem
+          p
+            font-size .9rem
+
+
+
+
+
+
+
+
+
 
 
 
