@@ -1,10 +1,10 @@
 @font-face
   font-family 'icomoon'
-  src url('../fonts/icomoon.eot?xt2fuh')
-  src url('../fonts/icomoon.eot?xt2fuh#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?xt2fuh') format('truetype'),
-    url('../fonts/icomoon.woff?xt2fuh') format('woff'),
-    url('../fonts/icomoon.svg?xt2fuh#icomoon') format('svg')
+  src url('../fonts/icomoon.eot?f0m2xh')
+  src url('../fonts/icomoon.eot?f0m2xh#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?f0m2xh') format('truetype'),
+    url('../fonts/icomoon.woff?f0m2xh') format('woff'),
+    url('../fonts/icomoon.svg?f0m2xh#icomoon') format('svg')
   font-weight normal
   font-style normal
 
@@ -27,14 +27,6 @@
   &:before
     content "\e956"
 
-.icon-mobile
-  &:before
-    content "\e958"
-
-.icon-mobile2
-  &:before
-    content "\e959"
-
 .icon-tablet
   &:before
     content "\e95a"
@@ -42,6 +34,14 @@
 .icon-user-tie
   &:before
     content "\e976"
+
+.icon-menu
+  &:before
+    content "\e9bd"
+
+.icon-cross
+  &:before
+    content "\ea0f"
 
 .icon-facebook
   &:before
@@ -76,10 +76,6 @@
   height 30px
   background url("../img/flecha-verde.png")
   background-size cover
-
-.active
-  background-color rgba(11, 187, 121, 1)
-  color white
 
 .menu
   width 100%
@@ -138,6 +134,55 @@
           transition .4s
           -webkit-transition .4s
           -moz-transition .4s
+      
+    .menu-sobre
+      position absolute
+      overflow scroll
+      top 80px
+      left 0
+      width 100%
+      height 100vh
+      z-index 1003
+      background rgba(11, 187, 121, .8)//rgba(51,51,51,.9)
+      transition all 0.5s
+      transform translateX(-100%)
+      padding 0
+      margin 0
+      display 
+      list-style none
+      .m-m
+        display block
+        width 100%
+        height 18%
+        border-bottom 1px solid rgba(255, 255, 255, .5)
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        a
+          width 100%
+          text-decoration none
+          font-size 1.5rem
+          color #fff
+          font-family 'Montserrat'
+          text-align center
+    
+    #menu-bar
+      display none
+    label
+      display none
+      position absolute
+      z-index 1003
+      top 12px
+      right 15px
+      font-size 2.5rem
+      color rgba(11, 187, 121, 1)
+    #menu-bar:checked ~ .menu-sobre
+      transform translateX(0%)
+      -webkit-transform translateX(0%)
+      -moz-transform translateX(0%)
+      -o-transform translateX(0%)
+      
 .cabecera
   width 100%
   height 110%
@@ -157,6 +202,10 @@
     text-align center
     font-family 'Source Sans Pro', sans-serif
     font-weight 700
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
     .titulo-kimvex
       font-size 10em
       margin-bottom .2em
@@ -168,6 +217,7 @@
       margin 0
       text-align center
       text-shadow 0em 0em 0em #000
+      width
     img
       width 600px
       height 50px
@@ -229,6 +279,7 @@
           color #fff
           font-family 'Montserrat'
           font-size 1.1rem
+          text-align center
          
 @keyframes girar {
   from {
@@ -250,7 +301,7 @@
 
 .cuerpo
   width 100%
-  height 160%
+  height 200%
   // background rgba(0,0,0,0.3) url('../img/photo-1416339442236-8ceb164046f8.jpg') no-repeat
   // background-attachment fixed
   // background-size cover
@@ -272,7 +323,7 @@
   //   align-items center
   .inconos-somos
     width 80%
-    height 25%
+    height 18%
     display flex
     justify-content space-around
     align-items center
@@ -288,7 +339,7 @@
       text-shadow rgba(0, 0, 0, .3) 0px 8px 10px
   .informacion
     width 80%
-    height 35%
+    height 27%
     text-align left
     color rgba(11, 187, 121, 1)
     font-size 1.5em
@@ -313,7 +364,7 @@
         height 120px
   .miembros
     width 93%
-    height 39%
+    height 54%
     display flex
     justify-content space-around
     align-items center
@@ -321,7 +372,7 @@
     flex-wrap wrap
     span
       width 23%
-      height 50%
+      height 33%
       display flex
       flex-direction column
       justify-content space-around
@@ -396,7 +447,7 @@
       
 .pie
   width 100%
-  height 25%
+  height 35%
   background-color black
   margin 0
   display flex
@@ -513,17 +564,203 @@
           p
             font-size .9rem
 
+@media (max-width: 770px)
 
+  .menu
+    height 80px
+    .opciones-menu
+      justify-content flex-start
+      .menu-logo
+        img
+          &:hover
+            width 210px
+            height 70px
+      label
+        display block
 
+  .item
+    display none
+@media (max-height: 500px) and (orientation:portrait)
+  .cabecera
+    height 100%
+  
+  .servicios  
+    height 100%
+  .cuerpo
+    height 150%
+  .cuerpo2
+    height 100%
+    
+@media (max-width: 770px) and (max-height: 400px)
 
+  .menu
+    height 70px
+    .opciones-menu
+      justify-content flex-start
+      .menu-logo
+        img
+          &:hover
+            width 210px
+            height 70px
+      .menu-sobre
+        top 70px
+      label
+        display block
+      
+  .cabecera
+    padding-top 150px
+    .titulo
+      text-align center
+      .titulo-kimvex
+        font-size 7rem
+      .subtitulo
+        width 70%
+        font-size 1rem
+      img
+        width 400px
+  .servicios
+    height 250%
+    .servicios-dif
+      .cont-servicios
+        .item-servicio
+          img
+            width 150px
+            height 150px
+  .cuerpo
+    height 400%
+  .cuerpo2
+    height 140%
+    .clientes
+      .cont-clientes
+        .item-clientes
+          a
+            font-size .9rem
+  .pie
+    height 80%
+  .item
+    display none
 
+@media (max-width: 700px)
+  .servicios
+    //height 100%
+    .servicios-dif
+      .cont-servicios
+        .item-servicio
+          img
+            width 150px
+            height 150px
+  .cuerpo2
+    .clientes
+      .cont-clientes
+        .item-clientes
+          img
+            width 290px
+            height 170px
+          a
+            font-size .9rem
 
+@media (max-width: 630px)
+  
+  .cabecera
+    height 80%
+    padding-top 250px
+    background rgba(11, 187, 121, 1) url('../img/cabecera.jpg') no-repeat
+    background-size cover
+    background-attachment fixed
+    video
+      display none
+    .titulo
+      text-align center
+      .titulo-kimvex
+        font-size 4rem
+      .subtitulo
+        width 70%
+        font-size 1rem
+      img
+        width 300px
+  .servicios
+    height 300%
+    .servicios-dif
+      .cont-servicios
+        flex-direction column
+        justify-content space-around
+        align-items space-around
+        .item-servicio
+          width 100%
+          height 14%
+          img
+            width 180px
+            height 180px
+  .cuerpo
+    height 500%
+    justify-content space-around
+    .inconos-somos
+      display none
+    .informacion
+      width 90%
+      height 15%
+      font-size 1.1rem
+      h2
+        font-size 1.5rem
 
+      .inf-img
+        width 100%
+        display flex
+        flex-direction column
+        justify-content space-around
+        align-items center
+        p
+          width 100%
+          text-align center
+        img
+          width 290px
+          height 100px
+    .miembros
+      width 100%
+      height 84%
+      span
+        width 90%
+        height 6%
+        display flex
+        flex-direction column
+        justify-content space-around
+        align-items center
+        img
+          width 150px
+          height 150px
+        strong
+          width 70%
+          text-align center
+        p
+          text-align center
+          font-family 'Allerta', sans-serif
 
+  .cuerpo2
+    padding-top 120px
+    .clientes
+      h2
+        height 5%
+      .cont-clientes
+        height 95%
+        flex-direction column
+        justify-content space-around
+        .item-clientes
+          width 100%
+          img
+            width 280px
+            height 150px
 
-
-
-
-
-
+  .pie
+    flex-direction column
+    height 50%
+    justify-content space-around
+    align-items center
+    p
+      width 90%
+      
+    .contacto
+      width 90%
+      
+    div
+      width 90%
       
