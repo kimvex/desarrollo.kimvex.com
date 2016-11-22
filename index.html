@@ -1,237 +1,807 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-  <title>Kimvex</title>
-  <link rel="shortcut icon" href="assets/img/favicon.png">
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/estilo.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/arriba.js"></script>
-</head>
-<body>
-  <span class="ir-arriba"></span>
-  <nav class="menu">
-    <ul class="opciones-menu">
-      <li class="menu-logo">
-        <img src="assets/img/kim.png">
-      </li>
-      <li class="item">
-        <a href="/" class="inicio">
-          Inicio
-        </a>
-      </li>
-      <li class="item">
-        <a href="#servicios" class="quienes">
-          Servicios
-        </a>
-      </li>      
-      <li class="item">
-        <a href="#quienes-somos" class="quienes">
-          ¿Quienes somos?
-        </a>
-      </li>
-      <li class="item">
-        <a href="#clientes" class="cliente">
-          Clientes
-        </a>
-      </li>
-      <li class="item">
-        <a href="#contacto" class="contacto">
-          Contactanos
-        </a>
-      </li>      
-      <input type="checkbox" id="menu-bar">
-      <label for="menu-bar" class="icon-menu"></label>
-      <li class="menu-sobre">
-        <span class="m-m">
-          <a href="#cabecera" class="inicio">
-            INICIO
-          </a>
-        </span>        
-        <span class="m-m">
-          <a href="#servicios" class="inicio">
-            SERVICIOS
-          </a>
-        </span>        
-        <span class="m-m">
-          <a href="#quienes-somos" class="inicio">
-            ¿QUIENES SOMOS?
-          </a>
-        </span>        
-        <span class="m-m">
-          <a href="#clientes" class="inicio">
-            CLIENTES
-          </a>
-        </span>        
-        <span class="m-m">
-          <a href="#contacto" class="inicio">
-            CONTACTO
-          </a>
-        </span>
-      </li>  
-    </ul>
-  </nav>
-  <header class="cabecera" id="cabecera">
-    <video src="assets/video/fondo.mp4" autoplay loop muted poster="assets/img/precarga.png">
-    </video>
-    <div class="titulo">
-      <h1 class="titulo-kimvex">
-        KIMVEX
-      </h1>
-      <h2 class="subtitulo">
-        TENEMOS LA ESTRATEGIA CORRECTA PARA CONCRETAR TU PROYECTO.
-      </h2>
-      <img src="assets/img/linea.png">
-    </div>
-  </header>
-  <section class="servicios" id="servicios">
-    <div class="servicios-dif">    
-      <h3>NUESTROS SERVICIOS
-< / >
-      </h3>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>Kimvex</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Empresa de desarrollo de software, Web App, Mobile App, Multimedia, Social Media, Marketing Digital y Redes.">
+        <meta name="keywords" content="Aplicaciones, App, Diseño, Software, Redes, Marketing, Social Media, Multimedia, Kimvex, Tabasco, Villahermosa, Mexico">
+        <meta name="author" content="Team Kimvex">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Mobile Specific Meta -->
 
-      <article class="cont-servicios">
-        <li class="item-servicio">
-          <img src="assets/img/desarrollo.png">
-          <span>PROGRAMACIÓN WEB</span>
-        </li>           
-        <li class="item-servicio">
-          <img src="assets/img/mobile.png">
-          <span>MOBILE APP</span>
-        </li>        
-        <li class="item-servicio">
-          <img src="assets/img/social.png">
-          <span>SOCIAL MEDIA</span>
-        </li>        
-        <li class="item-servicio">
-          <img src="assets/img/grafico.png">
-          <span>DISEÑO GRÁFICO</span>
-        </li>        
-        <li class="item-servicio">
-          <img src="assets/img/multimedia.png">
-          <span>MULTIMEDIA</span>
-        </li>        
-        <li class="item-servicio">
-          <img src="assets/img/marketing.png">
-          <span>MARKETING DIGITAL</span>
-        </li>
-      </article>
-    </div>
-  </section>
-  <section class="cuerpo" id="quienes-somos">
-    <article class="inconos-somos">
-      <span class="icon-user-tie"></span>
-      <span class="icon-display"></span>
-      <span class="icon-tablet"></span>
-    </article>
-    <article class="informacion">
-      <h2>¿QUIENES SOMOS?</h2>
-      <div class="inf-img">        
-        <p>Somos una empresa dedicada Desarrollo de Software, Aplicaciones Web, Marketing Digital y Mantenimiento de Redes. Brindando a nuestros clientes la más alta calidad para cumplir con sus requerimientos, utilizando las tecnologías más actuales.</p>
-        <img src="assets/img/kim.png">
-      </div>
-    </article>
-    <article class="miembros">
-      <span>
-        <img src="assets/img/jobs.png">
-        <strong>CEO, Co-founder & BackEnd</strong>
-        <p>Benjamín De la Cruz Martínez</p>
-      </span>
-      <span>
-        <img src="assets/img/yo-1.png">
-        <strong>CTO, Co-founder & FrontEnd</strong>
-        <p>Alejandro De la Cruz Martínez</p>
-      </span>
-      <span>
-        <img src="assets/img/cristian.png">
-        <strong>Marketing & Social Media</strong>
-        <p>Cristian Jesus Sandoval Torres</p>
-      </span>
-      <span>
-        <img src="assets/img/fer.png">
-        <strong>Diseño</strong>
-        <p>José Fermín Blanco De la Cruz</p>
-      </span>
-      <span>
-        <img src="assets/img/fofo.png">
-        <strong>Marketing & Social Media</strong>
-        <p>Edwin Adolfo López López</p>
-      </span>
-      <span>
-        <img src="assets/img/oski.png">
-        <strong>Co-founder & DataBase</strong>
-        <p>Oscar Peña Jiménez</p>
-      </span>      
-      <span>
-        <img src="assets/img/ivan.png">
-        <strong>DataBase</strong>
-        <p>Ivan Del Jesus López López</p>
-      </span>      
-      <span>
-        <img src="assets/img/barbie.png">
-        <strong>Soporte & Mantenimiento de equipo de Computo y Redes</strong>
-        <p>Luis Eduardo Pérez García</p>
-      </span>
-      <span>       
-        <img src="assets/img/david.png">
-        <strong>Soporte & Mantenimiento de equipo de Computo y Redes</strong>
-        <p>David Diaz Chan</p>
-      </span>      
-      <span>       
-        <img src="assets/img/gerardo.png">
-        <strong>Soporte & Mantenimiento de equipo de Computo y Redes</strong>
-        <p>Luis Gerardo Ramírez Díaz</p>
-      </span>      
-      <span>       
-        <img src="assets/img/jeiner.png">
-        <strong>Soporte & Mantenimiento de equipo de Computo y Redes</strong>
-        <p>Jeiner Raciel Carrera De la Cruz</p>
-      </span>
-    </article>
-  </section>
-  <section class="cuerpo2" id="clientes">
-    <article class="clientes">
-      <h2>Clientes</h2>
-      <div class="cont-clientes">
-      	<div class="item-clientes">
-      		<img src="assets/img/itzo.png">
-      		<a href="http://www.itzonaolmeca.edu.mx" target="_blank">http://www.itzonaolmeca.edu.mx</a>
-      	</div>      	
-      	<div class="item-clientes">
-      		<img src="assets/img/movimiento.png">
-      		<a href="http://movimientociudadanotabasco.com.mx" target="_blank">http://movimientociudadanotabasco.com.mx</a>
-      	</div>
-      </div>      
-    </article>
-  </section>
-  <footer class="pie" id="contacto">
-      <p>© Copyright 2016 Kimvex</p>
-      <div class="contacto">      	
-      	<span>CONTACTO</span>
-      	<strong>E-mail</strong>
-	    <a href="mailto:alexxruff@yahoo.com">
-	      	<span>alexxruff@yahoo.com</span>
-	    </a>	    
-	    <a href="mailto:chomi.numb.94@gmail.com">
-	      	<span>chomi.numb.94@gmail.com</span>
-	    </a>
-      </div>
-      <div>
-        <li>
-          <a href="https://www.facebook.com/kimvex" class="icon-facebook" target="_blank"> Facebook</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/Kimvex_oficial" class="icon-twitter" target="_blank"> Twitter</a>          
-        </li>
-        <li>
-          <a href="https://www.youtube.com/user/kimvexsocial" class="icon-youtube" target="_blank"> YouTube</a>          
-        </li>
-        <li>
-          <a href="" class="icon-linkedin" target="_blank"> Linkedin</a>          
-        </li>
-      </div>
-  </footer>
-</body>
+		<link rel="shortcut icon" href="img/favicon.png">
+		<!-- Google Font -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		<!-- Personalizado -->
+		<link rel="stylesheet" type="text/css" href="css/kimvex.css">
+
+
+    </head>
+	
+    <body id="body">
+	
+		<!-- preloader -->
+		<div id="preloader">
+			<img src="img/preloader.gif" alt="Preloader">
+		</div>
+		<!-- final preloader -->
+
+        <!-- 
+        barra de menu fixed
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- boton responsivo de menu -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /boton responsivo de menu -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logo">
+							<img src="img/kim.png" class="kim-logo" alt="Kimvex">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#trabajos">Trabajos</a></li>
+                        <li><a href="#equipo">Nuestro Equipo</a></li>
+                        <li><a href="#footer">Contactanos</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        final barra de menu fixed
+        ==================================== -->
+		
+		
+		
+        <!--
+        Slider de inicio
+        ==================================== -->
+		
+		<section id="slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			
+				<!-- Indicators bullet -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+				<!-- End Indicators bullet -->				
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					
+					<!-- single slide -->
+					<div class="inicio-1 item active">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">En<span class="color"> Kimvex!</span></h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/tenemos</span> la estretegia correcta</h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated">para concretar tu proyecto.</p>
+							
+							<ul class="social-links text-center">
+								<li><a href="https://twitter.com/Kimvex_oficial" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href="https://www.facebook.com/kimvex/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href="https://www.instagram.com/kimvex/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa-li fa-medium" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+					<!-- single slide -->
+					<div class="inicio-2 item">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Somos un<span> Equipo</span> de</h2>
+							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/profesionales</span> listos para ayudarte.</h3>
+							<p data-wow-duration="500ms" class="wow slideInRight animated">Kimvex</p>
+							
+							<ul class="social-links text-center fa-ul">
+								<li><a href="https://twitter.com/Kimvex_oficial" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href="www.facebook.com/kimvex/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href="https://www.instagram.com/kimvex/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa-li fa-medium" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+				</div>
+				<!-- End Wrapper for slides -->
+				
+			</div>
+		</section>
+		
+        <!--
+        Final de  Slider de inicio
+        ==================================== -->
+		
+        <!--
+        Servicios
+        ==================================== -->
+		
+		<section id="servicios" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+						<h2>Servicios</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-code" id="icon-b" aria-hidden="true"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Desarrollo Web & Mobile App</h3>
+								<p>Desarrollamos aplicaciones web y móvil, a medida de nuestros clientes, utilizando las tecnologias más actuales.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-pencil fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Diseño Gráfico</h3>
+								<p>Creamos diseños desde logos hasta lo que puedas imaginar.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+					
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-bullhorn fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Social Media</h3>
+								<p>Llevamos las redes sociales y las mantenemos al día, proveyendo a nuestros clientes métricas de crecimiento.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->					
+
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" id="serv" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-line-chart" id="icon-b" aria-hidden="true"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Marketing Digital</h3>
+								<p>Diseñamos y llevamos a cabo campañas de marketing digital para el crecimiento de la marca o producto de nuestros clientes.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->					
+
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" id="serv" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-caret-square-o-right" id="icon-a" aria-hidden="true"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Multimedia</h3>
+								<p>Producción de video y fotografía para marketing personal ó empresarial.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+
+					<!-- service item -->
+					<div class="col-md-4 wow fadeInRight" id="serv" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-sitemap" id="icon-b" aria-hidden="true"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Redes y Matenimiendo de equipo de computo</h3>
+								<p>Damos soporte y mantenimiento a redes de computo de micro y grandes empresas.</p>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+						
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        Final Servicios
+        ==================================== -->
+		
+		
+        <!--
+        Trabajos
+        ==================================== -->
+		
+		<section id="trabajos" class="works clearfix">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2>Trabajos</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center">
+						<p>Estos son algunos de nuestros trabajos</p>
+					</div>
+					
+					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+						<ul class="text-center">
+							<li><a href="javascript:;" data-filter="all" class="active filter">Todos</a></li>
+							<li><a href="javascript:;" data-filter=".web" class="filter">Web</a></li>
+							<li><a href="javascript:;" data-filter=".diseno" class="filter">Diseños</a></li>
+							<li><a href="javascript:;" data-filter=".multimedia" class="filter">Multimedia</a></li>
+							<li><a href="javascript:;" data-filter=".comunidad" class="filter">Comunidad</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="project-wrapper">
+			
+				<figure class="mix work-item web">
+					<img src="img/works/movimiento-1.png" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Movimiento Ciudadano" href="img/works/movimiento.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Página Web</h4>
+						<p>Movimiento Ciudadano Tabasco</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item multimedia">
+					<img src="img/works/hermanas-1.png" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Seleccionado entre los 18 mejores cortometrajes" href="img/works/hermanas.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Seleccionados en el Voodoo Film Fest</h4>
+						<p>Cortometraje</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item diseno">
+					<img src="img/works/LOGOAMV.png" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Logo Personalizado" href="img/works/LOGOAMV.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Logo Personalizado del Lic. ALberto A Medina</h4>
+						<p>Diseño</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="mix work-item web">
+					<img src="img/works/itzo-1.png" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Instituto Tecnológico de la Zona Olmeca" href="img/works/itzo.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Pagina Web</h4>
+						<p>ITZO</p>
+					</figcaption>
+				</figure>
+			
+				<figure class="mix work-item comunidad">
+					<img src="img/works/nodeschool-1.png" alt="">
+					<figcaption class="overlay">
+						<a class="fancybox" rel="works" title="Aprende a programar gratuitamente" href="img/works/nodeschool.png"><i class="fa fa-eye fa-lg"></i></a>
+						<h4>Nodeschool Tabasco</h4>
+						<p>Apoyo a comunidad</p>
+					</figcaption>
+				</figure>
+
+			</div>
+		
+
+		</section>
+		
+        <!--
+        Final trabajos
+        ==================================== -->
+		
+        <!--
+        Equipo
+        ==================================== -->		
+		
+		<section id="equipo" class="team">
+			<div class="container">
+				<div class="row">
+		
+					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+						<h2>Nuestro Equipo</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+						<p>Somos un equipo multidisciplinario que lleva a cabo los mejores proyectos para nuestros clientes.</p>
+					</div>
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="member-thumb">
+							<img src="img/team/jobs.png" alt="Benjamín" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Full Stack Developer Javascript</h5>
+								<p>Desarrollador Web, Mobile App, DevOps, Database. Insignia líder de comunidad Nodejs por IBM, Mentor en Nodeschool Tabasco</p>
+								<ul class="social-links text-center">
+									<li><a href="https://twitter.com/benjaChomin" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/benjamin.delacruz.14?fref=hovercard" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Benjamín De la Cruz</h4>
+						<span>CEO , Co-founder & Back-End</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="member-thumb">
+							<img src="img/team/yo-1.png" alt="Alex" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Desarrollador Front-End</h5>
+								<p>Desarrollador Front-End, Social Media, Marketing Digital, Insignia miembro de comunidad Nodejs por IBM, Mentor de Nodeschool Tabasco.</p>
+								<ul class="social-links text-center">
+									<li><a href="https://twitter.com/alexxruff" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/alex.delacruz.182" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Alejandro De la Cruz</h4>
+						<span>CTO , Co-founder & Front-End</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="member-thumb">
+							<img src="img/team/cristian.png" alt="Cristian" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Social Media Manager</h5>
+								<p>Social Media y Marketing digital, Multimedia, Insignia miembro de comunidad por IBM.</p>
+								<ul class="social-links text-center">
+									<li><a href="https://twitter.com/SENOR_FAS" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/criss.sandoval.9?fref=hovercard" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Cristian J Sandoval</h4>
+						<span>Marketing & Social Media</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/fer.png" alt="Fermin" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Diseño</h5>
+								<p>Diseñador Gráfico, Adobe Illustrator & Photoshop</p>
+								<ul class="social-links text-center">
+									<li><a href="https://twitter.com/ferwhite2" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/fer.blanco.96?fref=ts" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>José Fermin Blanco</h4>
+						<span>Diseño Gráfico</span>
+					</figure>
+					<!-- end single member -->					
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/fofo.png" alt="Adolfo" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Marketing & Social media</h5>
+								<p>Marketing y Social Media</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/adolfo.lopezz.1?fref=ts" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Edwin Adolfo López</h4>
+						<span>Marketing & Social Media</span>
+					</figure>
+					<!-- end single member -->					
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/oski.png" alt="Oscar" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>DataBase</h5>
+								<p>Experto Base de Datos MongoDB & Postgres SQL</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/oscar.penajimenez.96?fref=ts" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Oscar Peña</h4>
+						<span>Co-founder & DataBase</span>
+					</figure>
+					<!-- end single member -->					
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/ivan.png" alt="Ivan" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>DataBase</h5>
+								<p>Base de Datos MySQL</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/ivanlopezlop?fref=ts" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Ivan J López</h4>
+						<span>DataBase</span>
+					</figure>
+					<!-- end single member -->					
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/churro.png" alt="Ignacio" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Diseño</h5>
+								<p>Diseñador Gráfico, Adobe Illustrator & Photoshop</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/ignacio.chito1?ref=ts&fref=ts&qsefr=1" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Ignacio Hernandez</h4>
+						<span>Diseño Gráfico</span>
+					</figure>
+					<!-- end single member -->
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/barbie.png" alt="Eduardo" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Redes</h5>
+								<p>Redes y Matenimiento de Equipo de cómputo.</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/ISCLEPG?fref=ts" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Luis Eduardo Pérez</h4>
+						<span>Redes y Matenimiendo de equipo de computo</span>
+					</figure>
+					<!-- end single member -->					
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/david.png" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Redes</h5>
+								<p>Redes y Matenimiento de Equipo de cómputo.</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/david.diazchan?fref=ts" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>David Diaz Chan</h4>
+						<span>Redes y Matenimiendo de equipo de computo</span>
+					</figure>
+					<!-- end single member -->
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/gerardo.png" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Redes</h5>
+								<p>Redes y Matenimiento de Equipo de cómputo.</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/luisgerardo.ramirezdiaz?fref=ts" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Luis Gerardo Ramírez</h4>
+						<span>Redes y Matenimiendo de equipo de computo</span>
+					</figure>
+					<!-- end single member -->
+
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" id="miembros" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/jeiner.png" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Redes</h5>
+								<p>Redes y Matenimiento de Equipo de cómputo.</p>
+								<ul class="social-links text-center">
+									<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href="https://www.facebook.com/jeiner.carrera" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Jeiner Raciel Carrera</h4>
+						<span>Redes y Matenimiendo de equipo de computo</span>
+					</figure>
+					<!-- end single member -->		
+					
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        Final de equipo
+        ==================================== -->
+		
+		<!--
+        Estadisticas
+        ==================================== -->		
+		
+		<section id="facts" class="facts">
+			<div class="parallax-overlay">
+				<div class="container">
+					<div class="row number-counters">
+						
+						<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+							<h2>Kimvex</h2>
+							<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						</div>
+						
+						<!-- first count item -->
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+							<div class="counters-item">
+								<i class="fa fa-clock-o fa-3x"></i>
+								<strong data-to="365">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Dias del Año</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+							<div class="counters-item">
+								<i class="fa fa-users fa-3x"></i>
+								<strong data-to="5">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Clientes satisfechos</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+							<div class="counters-item">
+								<i class="fa fa-rocket fa-3x"></i>
+								<strong data-to="5">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p> Proyectos terminados </p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+							<div class="counters-item">
+								<i class="fa fa-trophy fa-3x"></i>
+								<strong data-to="1">0</strong>
+								<!-- Set Your Number here. i,e. data-to="56" -->
+								<p>Premios</p>
+							</div>
+						</div>
+						<!-- end first count item -->
+				
+					</div>
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        Final estadisticas
+        ==================================== -->
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single">
+							<img src="img/kim-blanco.png" alt="">
+							<p>Somos una empresa dedicada Desarrollo de Software, Aplicaciones Web, Marketing Digital y Mantenimiento de Redes. Brindando a nuestros clientes la más alta calidad para cumplir con sus requerimientos, utilizando las tecnologías más actuales.</p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="footer-single">
+
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="footer-single">
+							<h6>Siguenos</h6>
+							<ul>
+								<li><a href="https://blog.kimvex.com" target="_blank">Medium</a></li>
+								<li><a href="https://twitter.com/Kimvex_oficial" target="_blank">Twitter</a></li>
+								<li><a href="https://www.facebook.com/kimvex" target="_blank">Facebook</a></li>
+								<li><a href="https://www.instagram.com/kimvex/" target="_blank">Instagram</a></li>
+								<li><a href="https://www.youtube.com/user/kimvexsocial" target="_blank">Youtube</a></li>
+							</ul>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="footer-single">
+							<h6>Contactanos</h6>
+							<ul>
+								<li><a href="mailto:alexxruff@yahoo.com">alexxruff@yahoo.com</a></li>
+								<li><a href="mailto:chomi.numb.94@gmail.com">chomi.numb.94@gmail.com</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright text-center">
+							Copyright © 2016 <a href="http://www.kimvex.com/">Kimvex</a>. Todos los derechos reservados. Diseñado & Desarrollado por <a href="http://www.kimvex.com/">Kimvex</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="js/jquery.mixitup.min.js"></script>
+		<!-- jquery.parallax -->
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+		<!-- jquery.countTo -->
+        <script src="js/jquery-countTo.js"></script>
+		<!-- jquery.appear -->
+        <script src="js/jquery.appear.js"></script>
+		<!-- Contact form validation -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<!-- Google Map -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="js/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="js/custom.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "come on, you have a name don't you?",
+							minlength: "your name must consist of at least 2 characters"
+						},
+						email: {
+							required: "no email, no message"
+						},
+						message: {
+							required: "um...yea, you have to write something to send this form.",
+							minlength: "thats all? really?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+    </body>
 </html>
