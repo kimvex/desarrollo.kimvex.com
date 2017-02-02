@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /assets/stylus/
+Disallow: /img/parallax/
+Allow: /desarrollo web/
+Allow: /emprendedores*/
+Allow: /software*/
