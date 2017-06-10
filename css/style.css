@@ -7500,6 +7500,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #f36426;
   font-weight: 600;
 }
+.nosotros-c{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600 !important;
+  font-size: 48px !important;
+  color: #f36426;
+  /*text-shadow: rgba(0,0,0,.2) 0px 0px 10px;*/
+  margin: 30px 0; 
+}
 .nosotros-t{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600 !important;
@@ -7572,6 +7580,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 3rem 0px 0px 5rem;
 }
 .slide-p a{
+  border-radius: 0px 0px 10px 10px;
+  text-decoration: none;
+  border-bottom: 5px solid #924220;
+  padding: 2rem;
+  background-color: #f36426!important;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+.enviar-contacto{
   border-radius: 0px 0px 10px 10px;
   text-decoration: none;
   border-bottom: 5px solid #924220;
@@ -8198,6 +8216,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #484848;
   border: 2px solid #484848;
   margin-bottom: 30px;
+  width: 70%;
 }
 #fh5co-subscribe .form-control::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.4);
@@ -8234,6 +8253,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-subscribe .form-group {
   margin-bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 .servicios-c{
   height: 200px;
