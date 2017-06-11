@@ -7500,6 +7500,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #f36426;
   font-weight: 600;
 }
+.espere{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem 0;
+}
+.respuesta-envio{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 2rem 0;
+}
+.respuesta-envio-error{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 2rem 0;
+  color: red;
+}
 .nosotros-c{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600 !important;
