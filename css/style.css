@@ -7471,6 +7471,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-weight: 300;
   font-size: 35px;
+  line-height: normal;
   color: #ffffff;
 }
 .fecha-curso span{
@@ -7535,6 +7536,9 @@ h1, h2, h3, h4, h5, h6 {
   /*text-shadow: rgba(0,0,0,.2) 0px 0px 10px;*/
   margin: 30px 0; 
 }
+.nosotros-g{
+  color: #413000 !important;
+}
 .nosotros-prof{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500 !important;
@@ -7565,13 +7569,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .profesores .cargo-g{
   color: #06badd;
+  font-size: 22px;
+  font-weight: 600;
 }
 .nosotros-p{
   font-weight: 200;
   font-size: 25px;
   line-height: 32px;
 }
-
+.git-ico{
+  color: #f36426;
+}
 .nosotros-logo{
   height: 250px;
   display: flex;
@@ -7915,7 +7923,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #fff;
 }
-
+.background-react{
+  background-image: url(../images/hack-2.png);
+  background-size: cover;
+}
+.background-git{
+  background-image: url(../images/git-2.jpg);
+  background-size: cover;
+}
 #fh5co-hero {
   float: left;
   width: 100%;
@@ -7926,8 +7941,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 650px;
   z-index: 10;
 
-  background-image: url(../images/hack-2.png);
-  background-size: cover;
+
 
   overflow: hidden;
 }
@@ -8105,6 +8119,14 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   float: left;
   width: 50px;
+}
+.navbar-brand > .git-logo {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  float: left;
+  width: 100px;
 }
 .navbar-brand:hover {
   color: #fff;
